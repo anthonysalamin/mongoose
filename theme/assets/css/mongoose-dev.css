@@ -1,8 +1,10 @@
 body {
-  color: #333;
-  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  color: #fefefe;
+  background-color: #fefefe;
+  font-family: Syne, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 .section {
@@ -11,10 +13,203 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
+  position: relative;
 }
 
 .section.header {
-  height: 100vh;
+  min-height: 100dvh;
+  background-image: var(--image-5285749d);
+  background-position: 50%;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  position: relative;
+}
+
+.container.header {
+  min-height: 100dvh;
+}
+
+.nav__wrap-logo {
+  position: relative;
+}
+
+.nav {
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 64px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  position: absolute;
+}
+
+.img {
+  width: 100%;
+  height: 16px;
+  display: block;
+}
+
+.copyright {
+  letter-spacing: 1px;
+  font-size: 12px;
+  position: absolute;
+  top: auto;
+  bottom: 32px;
+  left: auto;
+  right: 32px;
+}
+
+.half {
+  width: 100%;
+  height: 100dvh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 45%;
+  display: flex;
+  position: relative;
+}
+
+.punchline {
+  font-size: 61px;
+  font-weight: 500;
+  line-height: 60px;
+  position: relative;
+}
+
+.cta__wrapper {
+  color: #fefefe;
+  cursor: pointer;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 48px;
+  text-decoration: none;
+  display: flex;
+}
+
+.cta__text {
+  margin-right: 12px;
+  font-weight: 500;
+  position: relative;
+}
+
+.cta__bubble {
+  width: 24px;
+  height: 24px;
+  background-color: #ff7e4d;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  box-shadow: 0 0 16px #ff7e4d;
+}
+
+.icon-arrow {
+  height: 10px;
+  position: relative;
+}
+
+@media screen and (max-width: 991px) {
+  .half {
+    padding-left: 40%;
+  }
+
+  .half.small {
+    width: 30%;
+  }
+
+  .punchline {
+    font-size: 50px;
+    line-height: 51px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .container.header {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .nav {
+    margin-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .img {
+    height: 12px;
+  }
+
+  .copyright {
+    bottom: 24px;
+    right: 24px;
+  }
+
+  .half {
+    padding-left: 16%;
+  }
+
+  .punchline {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .container, .container.header, .nav {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .half {
+    justify-content: flex-start;
+    padding-top: 220px;
+    padding-left: 0%;
+  }
+
+  .punchline {
+    font-size: 10vw;
+    line-height: 10vw;
+  }
 }
 
 
+@font-face {
+  font-family: 'Syne';
+  src: url("/assets/fonts/syne-medium.ttf") format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Syne';
+  src: url("/assets/fonts/syne-regular.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Syne';
+  src: url("/assets/fonts/syne-semibold.ttf") format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
