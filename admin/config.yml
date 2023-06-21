@@ -202,11 +202,10 @@ collections:
             name: 2f
             widget: string
           - hint: >-
-              Original link:
-              mailto:info@financialengineers.ch?subject=Get%20an%20edge, key:
-              -9138f1c
+              Original link: mailto:info@mongoose.ltd?subject=Get%20an%20edge,
+              key: -4d62ae85
             label: Link
-            name: '-9138f1c'
+            name: '-4d62ae85'
             widget: string
       - label: Images
         name: images
