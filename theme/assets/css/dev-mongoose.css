@@ -1,6 +1,11 @@
+:root {
+  --white: #fefefe;
+  --coral: #ff7e4d;
+}
+
 body {
+  background-color: var(--white);
   color: #fefefe;
-  background-color: #fefefe;
   font-family: Syne, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -90,7 +95,7 @@ body {
 }
 
 .cta__wrapper {
-  color: #fefefe;
+  color: var(--white);
   cursor: pointer;
   justify-content: flex-start;
   align-items: center;
@@ -108,13 +113,13 @@ body {
 .cta__bubble {
   width: 24px;
   height: 24px;
-  background-color: #ff7e4d;
+  background-color: var(--coral);
+  box-shadow: 0 0 16px 0 var(--coral);
   border-radius: 100%;
   justify-content: center;
   align-items: center;
   display: flex;
   position: relative;
-  box-shadow: 0 0 16px #ff7e4d;
 }
 
 .icon-arrow {
